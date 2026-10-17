@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Карта инструментов разработчика</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@500;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="nav">
+    <div class="logo">dev<span>/</span>map</div>
+    <nav>
+      <a href="#map">Карта</a>
+      <a href="#tools">Инструменты</a>
+      <a href="#flow">Как связаны</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <p class="tag">ДЕМОНСТРАЦИЯ · РАБОЧИЙ ЦИКЛ РАЗРАБОТЧИКА</p>
+    <h1>Шесть инструментов,<br /><em>без которых код не живёт</em></h1>
+    <p class="lead">Разработчик не просто пишет код. Он пишет, запускает, проверяет, сохраняет историю, делится и публикует. За каждый шаг отвечает свой инструмент.</p>
+    <div class="hero-stats">
+      <div><strong>6</strong><span>инструментов</span></div>
+      <div><strong>3</strong><span>вопроса к каждому</span></div>
+      <div><strong>1</strong><span>рабочий цикл</span></div>
+    </div>
+  </section>
+
+  <section id="map" class="section">
+    <h2>Карта</h2>
+    <p class="section-lead">Как читать карточку: <b>что делает</b> → <b>какую проблему решает</b> → <b>что будет, если его нет</b>.</p>
+    <div class="legend">
+      <span class="dot do"></span>Что делает
+      <span class="dot fix"></span>Проблема
+      <span class="dot risk"></span>Без него
+    </div>
+  </section>
+
+  <section id="tools" class="section alt">
+    <div class="tools">
+
+      <article class="tool">
+        <div class="num">01</div>
+        <h3>Редактор кода <small>VS Code</small></h3>
+        <dl>
+          <dt class="do">Что делает</dt>
+          <dd>Место, где пишется код: подсветка синтаксиса, автодополнение, поиск по проекту, расширения, встроенный терминал.</dd>
+          <dt class="fix">Какую проблему решает</dt>
+          <dd>Писать код быстро и без мелких ошибок: незакрытый тег или опечатку в имени переменной видно сразу.</dd>
+          <dt class="risk">Если его нет</dt>
+          <dd>Код в «Блокноте»: всё одним цветом, ошибки ищутся глазами, на любую правку уходит в разы больше времени.</dd>
+        </dl>
+      </article>
+
+      <article class="tool">
+        <div class="num">02</div>
+        <h3>Терминал <small>командная строка</small></h3>
+        <dl>
+          <dt class="do">Что делает</dt>
+          <dd>Даёт управлять компьютером командами: запускать программы, ставить пакеты, работать с Git, создавать файлы.</dd>
+          <dt class="fix">Какую проблему решает</dt>
+          <dd>Одна команда заменяет десяток кликов, а повторяющиеся действия можно автоматизировать скриптом.</dd>
+          <dt class="risk">Если его нет</dt>
+          <dd>Большинство инструментов разработки просто не запустить: у Git, npm и Python нет кнопок, только команды.</dd>
+        </dl>
+      </article>
+
+      <article class="tool">
+        <div class="num">03</div>
+        <h3>Git <small>контроль версий</small></h3>
+        <dl>
+          <dt class="do">Что делает</dt>
+          <dd>Сохраняет историю изменений проекта коммитами: кто, что и когда поменял. Позволяет вести ветки.</dd>
+          <dt class="fix">Какую проблему решает</dt>
+          <dd>Можно откатиться к рабочей версии и пробовать новое в отдельной ветке, не ломая основное.</dd>
+          <dt class="risk">Если его нет</dt>
+          <dd>Папки «site_final», «site_final_2», «site_точно_финал». Одна неудачная правка — и рабочая версия потеряна.</dd>
+        </dl>
+      </article>
+
+      <article class="tool">
+        <div class="num">04</div>
+        <h3>GitHub <small>удалённый репозиторий</small></h3>
+        <dl>
+          <dt class="do">Что делает</dt>
+          <dd>Хранит Git-репозиторий в облаке: код, история, задачи (Issues), обсуждение изменений (Pull Requests).</dd>
+          <dt class="fix">Какую проблему решает</dt>
+          <dd>Код доступен с любого компьютера, над ним могут работать несколько человек, а проект можно показать как портфолио.</dd>
+          <dt class="risk">Если его нет</dt>
+          <dd>Код живёт на одном ноутбуке: сломался диск — проект пропал. Командная работа превращается в пересылку архивов.</dd>
+        </dl>
+      </article>
+
+      <article class="tool">
+        <div class="num">05</div>
+        <h3>Браузер и DevTools <small>F12</small></h3>
+        <dl>
+          <dt class="do">Что делает</dt>
+          <dd>Показывает результат и даёт заглянуть внутрь: HTML-структура, CSS-стили, консоль с ошибками JavaScript, сеть, вид на телефоне.</dd>
+          <dt class="fix">Какую проблему решает</dt>
+          <dd>Видно, почему блок «уехал» или скрипт не работает. Стили можно подбирать вживую, без перезаписи файла.</dd>
+          <dt class="risk">Если его нет</dt>
+          <dd>Отладка вслепую: «почему не работает» решается методом тыка, а мобильная вёрстка проверяется только на реальном телефоне.</dd>
+        </dl>
+      </article>
+
+      <article class="tool">
+        <div class="num">06</div>
+        <h3>GitHub Pages <small>хостинг / публикация</small></h3>
+        <dl>
+          <dt class="do">Что делает</dt>
+          <dd>Превращает репозиторий с <code>index.html</code> в настоящий сайт по ссылке вида <code>имя.github.io/проект</code>.</dd>
+          <dt class="fix">Какую проблему решает</dt>
+          <dd>Сайт можно бесплатно показать любому человеку, без покупки сервера и настройки домена.</dd>
+          <dt class="risk">Если его нет</dt>
+          <dd>Сайт открывается только у автора на компьютере. Заказчику или преподавателю остаётся смотреть скриншоты.</dd>
+        </dl>
+      </article>
+
+    </div>
+  </section>
+
+  <section id="flow" class="section">
+    <h2>Как они связаны</h2>
+    <ol class="flow">
+      <li><b>Редактор</b><span>пишу код</span></li>
+      <li><b>Браузер</b><span>проверяю результат</span></li>
+      <li><b>Терминал</b><span>даю команды</span></li>
+      <li><b>Git</b><span>фиксирую версию</span></li>
+      <li><b>GitHub</b><span>отправляю в облако</span></li>
+      <li><b>Pages</b><span>публикую сайт</span></li>
+    </ol>
+    <p class="section-lead">Выпадает любое звено — цепочка рвётся: код либо нельзя написать удобно, либо проверить, либо сохранить, либо показать.</p>
+  </section>
+
+  <footer>
+    <p>Учебный проект: карта инструментов разработчика.</p>
+  </footer>
+</body>
+</html>
